@@ -15,6 +15,12 @@ function test_input($data) {
   return $data;
 }
 
-
+//databas congig
+$servername = "localhost";
+$dbname = "savonhen";
+$username = "savonhen";
+include "hemlis.php";
+// hemlis.php ser ut såhär
+//<?php $password = "dblösenord";
 
 ?>

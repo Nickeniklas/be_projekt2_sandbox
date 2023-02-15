@@ -47,17 +47,14 @@ body {
     margin: 0;
     font-family: "Helvetice Neue", Helvetica, sans-serif;
 }
-#container {
+.container {
     background-color: #fff;
     color: #3D3D3D;
     max-width: 800px;
     margin: auto;
     min-height: 100vh;
 }
-article {
-    margin-bottom: 30px;
-    padding-left: 10px;
-}
+
 
 /* Footer */
 footer {
