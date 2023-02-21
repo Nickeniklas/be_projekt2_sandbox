@@ -3,6 +3,6 @@
 <h2>Annonser</h2>
 <p>Följande annonser finns på dejtingsajten</p>
 
-<?php include "./modelProfiles.php"; ?>
+<?php include "./model_profiles.php"; ?>
 
 <!-- Printa annonserna vettigt -->

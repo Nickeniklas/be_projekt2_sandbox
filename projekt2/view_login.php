@@ -5,7 +5,7 @@
 
 <form action="index.php" method="GET">
   Användarnamn: <input type="text" name="username"><br>
-  Lösenord: <input type="text" name="password"><br>
+  Lösenord: <input type="password" name="password"><br>
   <input type="submit" value="Logga in">
 </form> 
 

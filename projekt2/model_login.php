@@ -7,7 +7,7 @@ if(!empty($_REQUEST['username']) && !empty($_REQUEST['password'])){
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ss", $username,$password);
 
-    if($stmt->execute() && $stmt->$num_rows > 0) {
+    if($stmt->execute() && $stmt->num_rows > 0) {
         print("Användarnmn och lösenord korrekt!");
     }
     else {
