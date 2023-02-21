@@ -2,7 +2,7 @@
 
 /* Sidhuvudet logo, firmanamn och nav */
 header {
-    background-color: #1abc9c;
+    background-color: #0e6103;
     display: flex;  /* logon och nav är flex items */
     align-items: center;
 }
@@ -48,17 +48,27 @@ body {
     font-family: "Helvetice Neue", Helvetica, sans-serif;
 }
 .container {
-    background-color: #fff;
-    color: #3D3D3D;
+    background-color: #809e49;
+    color: #ff0000;
     max-width: 800px;
     margin: auto;
     min-height: 100vh;
 }
-
+article {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    background-color: #809e00;
+}
+.blackLine {
+    background-color: silver;
+    width: 100%;
+    height: 5px;
+}
 
 /* Footer */
 footer {
-    background-color: #1abc9c;
+    background-color: #0e6103;
     color: #fff;
     position: fixed;
     bottom: 0px;
