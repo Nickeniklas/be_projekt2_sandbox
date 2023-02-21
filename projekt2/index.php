@@ -12,12 +12,19 @@
 <body>
     <div class="container">
         <?php include "header.php" ?> <!-- Logo och huvudmeny -->
-        <article class="">
+        <article>
             <h1>BBdatingV2</h1>
-            <?php include "./viewProfiles.php";?>
+            <div class="blackLine"></div>
+            <?php include "./view_Profiles.php";?>
             <!-- Annonsvyn -->
-                
+            <div class="blackLine"></div>        
         </article>
+        
+        <article>
+            <?php include "./view_login.php";?>
+            <div class="blackLine"></div>
+        </article>
+        
         <footer>
             Not by Dennis<sup>&#169;</sup>
         </footer>

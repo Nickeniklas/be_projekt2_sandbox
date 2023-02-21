@@ -15,12 +15,22 @@ function test_input($data) {
   return $data;
 }
 
-//databas congig
+//databas config
+//lösenord i separat fil
 $servername = "localhost";
 $dbname = "savonhen";
 $username = "savonhen";
 include "hemlis.php";
-// hemlis.php ser ut såhär
-//<?php $password = "dblösenord";
+
+//bättre felsökning
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection  
+//om variabeln $conn innehåller metoden, egenskap eller parametrar med namnet "connect_error" 
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connection Successful";
 
 ?>
