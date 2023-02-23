@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBdatingV2 | HOME</title>
+    <title>BBdatingV2</title>
     <link rel="stylesheet" href="../style.css">
-    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -26,7 +25,8 @@
         </article>
 
         <article>
-            <?php include "./php.php";?>
+            <h1>Title</h1>
+            <!--?php include "./php.php";?>-->
             <div class="blackLine"></div>
         </article>
         

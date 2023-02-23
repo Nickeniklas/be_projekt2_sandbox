@@ -24,10 +24,13 @@ include "hemlis.php";
 
 //bättre felsökning
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
+//contructor method, mysqli objekt
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection  
-//om variabeln $conn innehåller metoden, egenskap eller parametrar med namnet "connect_error" 
+//om variabeln $conn innehåller metoden, egenskap, funktioner eller parametrar med namnet "connect_error" 
+//eftersom En klass innehåller objekt, vilka i sin tur kan ha olika metoder, egenskaper, funktioner eller parametrar.
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }

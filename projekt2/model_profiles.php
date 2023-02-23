@@ -7,5 +7,5 @@ print($stmt->num_rows);//(printar ut en 1) mysqli_reslut objektet har en egenska
 //UNPREPARATIONSES!!!!!!!
 if($stmt->num_rows > 0){
     while($row = $stmt->fetch_assoc())
-    print("Användar namn: " . $row['username']);
+    print("<h3>Användar namn: " . $row['username']."</h3>");
 }

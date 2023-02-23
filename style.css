@@ -59,11 +59,14 @@ article {
     flex-direction: column;
     padding-left: 10px;
     background-color: #809e00;
+    
 }
 .blackLine {
     background-color: silver;
     width: 100%;
     height: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Footer */
