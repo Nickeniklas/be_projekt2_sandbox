@@ -13,7 +13,7 @@
         <?php include "header.php" ?> <!-- Logo och huvudmeny -->
         <article>
             <?php include "./view_account.php"; ?>
-            <div class="blackLine"></div>        
+            <div class="spaceLine"></div>        
         </article>
         
         <footer>

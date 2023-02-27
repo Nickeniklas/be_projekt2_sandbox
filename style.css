@@ -61,12 +61,17 @@ article {
     background-color: #809e00;
     
 }
-.blackLine {
+.spaceLine {
     background-color: silver;
     width: 100%;
     height: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.largeInput{
+    padding:10px;
+
 }
 
 /* Footer */

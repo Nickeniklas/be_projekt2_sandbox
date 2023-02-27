@@ -7,9 +7,7 @@
         <!-- Huvudmenyn -->
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="../projekt1/">Projekt 1</a></li>
-            <li><a href="../projekt2/">Projekt 2</a></li>
-            <li><a href="../rapport/">Rapport</a></li>
+            <li><a href="report.php">Rapport</a></li>
             <!-- Visa profilsidan om man är inloggad -->
             <?php
               if (isset($_SESSION['name'])) {

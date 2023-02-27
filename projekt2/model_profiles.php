@@ -1,16 +1,16 @@
 <?php
 
+for($i=0;$i<10;$i++){
+    $sql = "SELECT * FROM profiles WHERE id=$i"; 
 
-$sql = "SELECT * FROM profiles";
-
-/*$stmt = $conn->query($sql); //query metoden av mysqli objektet returnerar mysqli_result objektet
-$result = $stmt->fetch(PDO::FETCH_ASSOC);
-print("<p>hej:" . $result['username'] . "</p>");*/
-
-print($stmt->num_rows);//(printar ut en 1) mysqli_reslut objektet har en egenskap som heter num_rows
-
-//UNPREPARATIONSES!!!!!!!
-if($stmt->num_rows > 0){
-    while($row = $stmt->fetch_assoc())
-    print("<h3>Användar namn: " . $row['username']."</h3>");
+    if ($result = $conn->query($sql)){
+        while ($row = $result->fetch_assoc()) {
+            if($_SESSION['name']){
+                print("<h3>". $row['realname']."</h3>");
+                print("<p>".$row['username']." berättar om sig själv: ".$row['bio']."</p>");
+                print("<p>total likes:".$row['likes']." </p>");
+            }
+    }
+    }
+    
 }

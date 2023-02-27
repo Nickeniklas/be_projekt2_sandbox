@@ -13,21 +13,23 @@
         <?php include "header.php" ?> <!-- Logo och huvudmeny -->
         <article>
             <h1>BBdatingV2</h1>
-            <div class="blackLine"></div>
+            <div class="spaceLine"></div>
             <?php include "./view_Profiles.php";?>
             <!-- Annonsvyn -->
-            <div class="blackLine"></div>        
+            <div class="spaceLine"></div>        
         </article>
         
         <article>
-            <?php include "./view_login.php";?>
-            <div class="blackLine"></div>
+            <?php if(!isset($_SESSION['name'])){
+                include "./view_login.php";
+            }?>
+            <div class="spaceLine"></div>
         </article>
 
         <article>
             <h1>Title</h1>
             <!--?php include "./php.php";?>-->
-            <div class="blackLine"></div>
+            <div class="spaceLine"></div>
         </article>
         
         <footer>

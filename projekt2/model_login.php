@@ -15,7 +15,8 @@ if (!empty($_REQUEST['user']) && !empty($_REQUEST['pass'])) {
         if ($result->num_rows > 0) {
             print("Användarnmn och lösenord korrekt!");
             $_SESSION['name'] = $user;
-            print("<h3>Ditt användarnamn har sparats i SESSION<br>namn: ". $_SESSION['name'] . "</h3>");
+            print("<h3>Ditt användarnamn har sparats i SESSION<br>namn: ". $_SESSION['name'] . "<br> Du blir automatiskt skickad till din profil om 3 sekunder.</h3>");
+            header("Refresh:3; url=account.php");
         } else {
             print("Du har matat in felaktiga logins. Försök pånytt eller BE GONE!");
         }

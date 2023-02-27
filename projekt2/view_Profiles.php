@@ -1,7 +1,7 @@
 <!-- Vy delen -->
 
 <h2>Annonser</h2>
-<p>Följande annonser finns på dejtingsajten</p>
+<p>Vi erbjuder på: </p>
 
 <?php include "./model_profiles.php"; ?>
 
