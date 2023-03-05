@@ -22,13 +22,16 @@
         <article>
             <?php if(!isset($_SESSION['name'])){
                 include "./view_login.php";
-            }?>
+            }else {
+                echo "You're signed in.";
+            }
+            ?>
             <div class="spaceLine"></div>
         </article>
 
         <article>
             <h1>Title</h1>
-            <!--?php include "./php.php";?>-->
+            <p>waiting for text.</p>
             <div class="spaceLine"></div>
         </article>
         

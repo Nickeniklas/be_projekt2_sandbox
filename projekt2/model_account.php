@@ -1,5 +1,5 @@
 <?php $username = $_SESSION['name'];
-print("Welcome to your profile <b>" . $username . "</b>");
+print("<p>Welcome to your profile <b>" . $username . "</b></p>");
 
 $sql = "SELECT * FROM profiles WHERE username =?";
 $stmt = $pdoconn->prepare($sql);
@@ -24,13 +24,14 @@ $fullname = $_REQUEST['fullname'];
 
 if(isset($_GET['submitChanges'])){
     try{
-       $sql = "UPDATE profiles SET bio=$bio WHERE id=1";
+       $sql = "UPDATE profiles SET bio=?, realname=? WHERE username =?";
         
     $stmt = $pdoconn->prepare($sql);
-    $stmt->execute();
+    $stmt->execute([$bio, $fullname, $username]);
 
-
-    print("no"); 
+    print("Your profile information will be updated shortly!");
+    header("refresh.php:5");
+    
     }catch(PDOException $e) {
         echo $sql . "<br>" . $e->getMessage();
     }
