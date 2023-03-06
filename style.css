@@ -61,6 +61,10 @@ article {
     background-color: #809e00;
     
 }
+
+.profileAD {
+    border:#00AA89 solid 3px;
+}
 .spaceLine {
     background-color: silver;
     width: 100%;

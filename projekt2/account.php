@@ -15,6 +15,11 @@
             <?php include "./view_account.php"; ?>
             <div class="spaceLine"></div>        
         </article>
+
+        <article>
+            <?php include "./view_comments.php"; ?>
+            <div class="spaceLine"></div>        
+        </article>
         
         <footer>
             Not by Dennis<sup>&#169;</sup>

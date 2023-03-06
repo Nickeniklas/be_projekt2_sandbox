@@ -15,7 +15,7 @@ try {
     </form>
 <?php
 $bio = $_GET['bio'];
-$fullname = $_REQUEST['fullname'];
+$fullname = $_GET['fullname'];
 
 } catch (PDOException $e) {
     echo "Something went wrong :/. Here is some information: " . $e->getMessage();
@@ -30,7 +30,7 @@ if(isset($_GET['submitChanges'])){
     $stmt->execute([$bio, $fullname, $username]);
 
     print("Your profile information will be updated shortly!");
-    header("refresh.php:5");
+    //header("refresh:5");
     
     }catch(PDOException $e) {
         echo $sql . "<br>" . $e->getMessage();

@@ -14,8 +14,8 @@
         <article>
             <h1>BBdatingV2</h1>
             <div class="spaceLine"></div>
-            <?php include "./view_Profiles.php";?>
-            <!-- Annonsvyn -->
+            <?php include "./view_Profiles.php";
+            include "./view_ad"; ?>
             <div class="spaceLine"></div>        
         </article>
         
