@@ -57,14 +57,23 @@ body {
 article {
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
     background-color: #809e00;
-    
+    align-items: center;        /* CENTERED */
+    justify-content: center;
 }
 
 .profileAD {
-    border:#00AA89 solid 3px;
+    border: black solid 3px;
+    background-color: silver;
+    display: inline-block;
+    
+    padding: 15px;
 }
+.profileAD:hover {
+    background-color: #0e6103;
+    color:white;
+}
+
 .spaceLine {
     background-color: silver;
     width: 100%;
@@ -76,6 +85,10 @@ article {
 .largeInput{
     padding:10px;
 
+}
+
+h3, h2, h1 {
+    color: black;
 }
 
 /* Footer */

@@ -6,6 +6,6 @@ $sql = "SELECT message, sender FROM Comments WHERE receiver=?";
 $stmt=$pdoconn->prepare($sql);
 $stmt->execute([$receiverID]);
 
-while($row = $stmt->fetch(PDO::fetch_assoc)) { ?>
-    <p> <?= $row['sender'] ?> kommenterar: <?= $row['message'] ?> </p>
+while($row = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
+    <p> <?= $row['sender'] ?> Commented: <?= $row['message'] ?> </p>
 <?php } ?>

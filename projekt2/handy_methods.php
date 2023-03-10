@@ -28,7 +28,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 //contructor method, mysqli objekt
 $conn = new mysqli($servername, $username, $password, $dbname);
 $pdoconn =  new PDO("mysql:host=$servername;dbname=$dbname; charset=UTF8", $username, $password);
- 
+$pdoconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
 
 // Check connection  
 //om variabeln $conn innehåller metoden, egenskap, funktioner eller parametrar med namnet "connect_error" 

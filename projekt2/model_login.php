@@ -13,7 +13,7 @@ if (!empty($_REQUEST['user']) && !empty($_REQUEST['pass'])) {
         
         if ($result) {
             print("Användarnamn och lösenord korrekt!");
-            $_SESSION['receiverID']=$result['id'];
+            $_SESSION['receiverID']=$result['id']; // ID TILL KOMMENTARS FUNKTIONALITET
             $_SESSION['name'] = $user;
             print("<h3>Ditt användarnamn har sparats i SESSION<br>namn: ". $_SESSION['name'] . "<br> Du blir automatiskt skickad till din profil om 3 sekunder.</h3>");
             header("Refresh:3; url=account.php");
