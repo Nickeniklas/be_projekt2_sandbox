@@ -1,6 +1,6 @@
 <?php
-$username = $_SESSION['name'];
-$receiverID = $_SESSION['receiverID'];
+$user = $_SESSION['name'];
+$receiverID = $_SESSION['receiverID'];  // MAKES SENSE NÄR MAN SKRIVER UT
 
 $sql = "SELECT message, sender FROM Comments WHERE receiver=?";  
 $stmt=$pdoconn->prepare($sql);
